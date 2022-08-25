@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+   <title>Réponse Formulaire</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Jquerry -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <link rel="stylesheet" href="css/style.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <!--BootStrapp Lien CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+   
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.2.61/jspdf.debug.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+     
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+
+   <div class="header">
+      <div class="container-fluid">
+         <div class="row d_flex">
+            <div class=" col-md-2 col-sm-3 logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo">
+                        <a href="Home.html"><img src="images/logo.png" alt="#" /></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                     aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="titre">
+                     <ul class="navbar-nav mr-auto">
+                        <h1>HEPL FORM </h1>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div id="cacher">
+               <ul class="email text_align_right">
+                  <li id="Bonjour"> </li>
+                 
+
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <form method="post" onSubmit="return false" action="">
+
+      <div class="Envoie">
+         <button class="pdf"><i class="fa fa-download"></i> Download PDF</button>
+      </div>
+      <body id="rep">
+
+      </body>
+
+
+
+   </form>
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>© 2022 All Rights Reserved. Design by Khalladi Mohamed / Achour Oussama</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+     
+      <script type="module" src="./js/Class/Question.js"></script>
+      <script type="module" src="./js/VoirReponse.js"></script>
+      
+      
+      
+
+</body>
+
+</html>

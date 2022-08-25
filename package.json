@@ -1,0 +1,19 @@
+{
+  "name": "projet-js-groupe-11",
+  "version": "1.0.0",
+  "description": "Vous trouverez dans ce répertoire. L'énoncé du projet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JS-assignement-2022/projet-js-groupe-11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JS-assignement-2022/projet-js-groupe-11/issues"
+  },
+  "homepage": "https://github.com/JS-assignement-2022/projet-js-groupe-11#readme"
+}

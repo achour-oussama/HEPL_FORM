@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="FR">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>Creation Formulaire</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- Jquerry -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <!-- bootstrap css -->
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- fevicon -->
+   
+   <!--BootStrapp Lien CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <!--  <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <!-- <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div> -->
+   <!-- end loader -->
+   <!-- header -->
+   <div class="header">
+      <div class="container-fluid">
+         <div class="row d_flex">
+            <div class=" col-md-2 col-sm-3 logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo">
+                        <a href="Home.html"><img src="images/logo.png" alt="#" /></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div >
+               <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                     aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="titre">
+                     <ul class="navbar-nav mr-auto">
+                        <h1>HEPL FORM </h1>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div id="cacher" >
+               <ul  class="email text_align_right">
+                  <li id="Bonjour"> </li>
+                  <button>
+                     <li class="Hide" hidden> Se deconnecter </li>
+                  </button>
+
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <form method="post"  onSubmit="return false"  action="">
+
+      <div class="Envoie">
+         <input type="Button" id="supprimer" class="btn btn-danger" value="Supprimer le formulaire" name="Supprimer">
+         <button type="button" id="dupliquer" class="btn btn-primary">Dupliquer</button>
+      </div>
+    
+    
+      <div class="Formulaire">
+        
+         <div typequestion="0" id="REC-0" class="nomFormulaires">
+            <label for="intilule"  class="label-NomForm">Veuillez selectionner le nom du formulaire :</label>
+            <input type="text" required name="intilule" class="NomForm"  placeholder="Nom du Formulaire">
+
+            <label for="intilule"  class="label-date">Veuillez une date expiration svp (non obligatoire) :</label>
+            <input type="date"   name="dateExpiration" class="DateForm"  placeholder="Nom du Formulaire">
+
+            <input type="submit" id="REC-0" class="EnregistreQuestion" value="Enregistrer" name="complete">
+         </div>
+     
+      </div>
+
+
+
+      <div class="boxe-AjoutQuestion">
+         <h1 class="boxe-titre">Ajouter une Question : </h1>
+
+         <label class="type-question">Selectionner le type de question : </label>
+
+         <select name="question" id="select-question">
+            <option value="0">Choissez un type de question</option>
+            <option value=1>Liste Déroulante</option>
+            <option value=2>Réponse courte </option>
+            <option value=3>Réponse Longue</option>
+            <option value=4>Réponse à cocher</option>
+            <option value=5>Réponse à cocher (Choix Unique) </option>
+            <option value=6>Date </option>
+            <option value=7>Réponse Numerique</option>
+         </select>
+
+         <input type="button" id="ajouter" class="ajouter" value="Ajouter" name="ajouter">
+
+         <input type="submit" id="complete" class="ajouter" value="Enregistrer les modification" name="complete">
+         <input type="submit" id="comback" class="ajouter" value="Revenir à l'acceuil" name="complete">
+
+
+      </div>
+
+   </form>
+
+
+
+   </div>
+
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>© 2022 All Rights Reserved. Design by Khalladi Mohamed / Achour Oussama</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+
+   <!-- sidebar -->
+
+   <script type="module" src="./js/CreationForm.js"></script>
+   <script type="text/javascript" src="./js/FonctionUtile.js"></script>
+   <script  type="module"   src="./js/Class/Question.js"></script>
+
+</body>
+
+</html>
