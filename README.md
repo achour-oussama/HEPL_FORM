@@ -1,28 +1,40 @@
-# Projet JS 2022 HEPL FORM
+# Projet HEPL Form
 
-By Mohamed Khaladi Amine and Achour Oussama
+Le projet HEPL Form consiste à développer un site web permettant de créer et gérer des formulaires en ligne, avec une partie backend en PHP et une partie frontend en JavaScript.
 
-## Déscription de l'objectif du projet
-Dans ce projet nous avons pour objectif de réaliser un "clone" de googleForm mais avec quelques différence,
+## Fonctionnalités principales
 
-les voiçi : 
+1. **Création de formulaires :**
+   - Les utilisateurs pourront créer des formulaires personnalisés avec différents types de questions (texte libre, choix multiples, cases à cocher, etc.).
 
-- Chaque formulaire est unique pour un répondant
-- Les réponses sont conserver
-- Un répondant peut avoir la possibilité de modifier ses réponses
-- Le formulaire peut être partagé en lecture de ce fait, un autre utilsateur peut avoir accès au réponse d'un formulaire qu'il n'a pas créer
+2. **Partage de formulaires :**
+   - Chaque formulaire créé disposera d'un lien unique que l'utilisateur pourra partager pour recueillir des réponses.
 
+3. **Connexion des utilisateurs :**
+   - Les utilisateurs pourront s'inscrire et se connecter pour accéder à leurs formulaires et aux réponses collectées.
 
-## Déscription de la réalisation du projet 
+4. **Répondre aux formulaires :**
+   - Les répondants pourront accéder aux formulaires partagés via un lien et y répondre sans nécessité de création de compte.
 
-Le projet est découper en  partie,
+5. **Modification des formulaires :**
+   - Les utilisateurs  pourront modifier ou mettre à jour leurs formulaires existants.
 
-La première constituée de fichier html qui ne servira unniquement qu'au visuel, aucune logique n'y sera implanté.
+## Structure du Projet
 
-La partie Java script qui a pour role de dynamisé la page, on y retrouve tout sorte événement clique , de manipulation du dom, ou des petites animations
+Le projet sera divisé en deux parties :
 
-la derniers en php sera la partie Back-End du projet -> 
+- **Backend (PHP) :**
+  - Gestion des utilisateurs (inscription, connexion, authentification).
+  - Création, modification et suppression de formulaires dans une base de données.
+  - Routage et gestion des requêtes pour les fonctionnalités CRUD (Create, Read, Update, Delete).
 
-Il est découper en 2 partie, la partie controleur qui possedera tout les traitement avec la BD. La partie API qui contiendra toute les fonction nous permettant de commuiquer avec la BD.
+- **Frontend (JavaScript) :**
+  - Interface utilisateur pour la création, modification et consultation des formulaires.
+  - Affichage des formulaires pour les répondants.
+  - Intégration de fonctionnalités interactives côté client (validation de formulaire, etc.).
 
+## Technologies Utilisées
+
+- **Backend :** PHP, MySQL (ou autre système de gestion de base de données).
+- **Frontend :** HTML, CSS, JavaScript (sans utilisation de frameworks).
 
